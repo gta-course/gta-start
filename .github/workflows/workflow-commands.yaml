@@ -14,4 +14,4 @@ jobs:
         run: echo "::debug title=debug title,file-app.js,line=2,endLine=3::Missing semicolon"
 
       - name: Setting an warning msg with parameters
-        run: echo "::warning title="::warning title,file-app.js,line=2,endLine=3::Missing semicolon"
+        run: echo "::warning title="warning title,file-app.js,line=2,endLine=3::Missing semicolon"
