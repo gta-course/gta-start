@@ -1,17 +1,5 @@
 name: Manually Triggered
 on:
-  workflow_dispatch:
-    inputs:
-      string:
-        description: A string input
-        type: string
-        required: true
-        default: "default value"
-
-      environment:
-        description: "Environment"
-        type: environment
-        required: true
   repository_dispatch:
     types: webhook
 
@@ -21,5 +9,4 @@ jobs:
     steps:
       - run: echo $GITHUB_REF
       - run: |
-          echo "String: ${{ inputs.string }}"
-          echo "environment: ${{ inputs.environment }}"
+          echo "hello"
