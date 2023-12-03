@@ -1,7 +1,7 @@
 name: Stale Issues & PRs
 on:
   schedule:
-    - cron: "0 14 * * *" #minute hours day(month) month week(day )
+    # - cron: "0 14 * * *" #minute hours day(month) month week(day )
     - cron: "0/5 * * * *"
 
 jobs:
